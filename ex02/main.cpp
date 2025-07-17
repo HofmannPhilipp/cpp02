@@ -6,7 +6,7 @@
 /*   By: phhofman <phhofman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/15 11:07:57 by phhofman          #+#    #+#             */
-/*   Updated: 2025/07/17 10:10:45 by phhofman         ###   ########.fr       */
+/*   Updated: 2025/07/17 10:30:04 by phhofman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,9 @@ void moreTests(void)
 	Fixed a(2.5f);
 	Fixed b(5.25f);
 
+	std::cout << std::boolalpha;
 	std::cout << "\n--- Comparison Operators ---" << std::endl;
+	std::cout << "a: " << a << " & b: " << b << std::endl;
 	std::cout << "a < b:  " << (a < b) << std::endl;
 	std::cout << "a > b:  " << (a > b) << std::endl;
 	std::cout << "a <= b: " << (a <= b) << std::endl;
@@ -27,6 +29,7 @@ void moreTests(void)
 	std::cout << "a != b: " << (a != b) << std::endl;
 
 	std::cout << "\n--- Arithmetic Operators ---" << std::endl;
+	std::cout << "a: " << a << " & b: " << b << std::endl;
 	std::cout << "a + b: " << (a + b) << std::endl;
 	std::cout << "a - b: " << (a - b) << std::endl;
 	std::cout << "a * b: " << (a * b) << std::endl;
@@ -43,6 +46,7 @@ void moreTests(void)
 	std::cout << "x: " << x << std::endl;
 
 	std::cout << "\n--- min / max ---" << std::endl;
+	std::cout << "a: " << a << " & b: " << b << std::endl;
 	Fixed &minRef = Fixed::min(a, b);
 	Fixed &maxRef = Fixed::max(a, b);
 	std::cout << "min(a, b): " << minRef << std::endl;

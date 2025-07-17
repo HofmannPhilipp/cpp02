@@ -6,7 +6,7 @@
 /*   By: phhofman <phhofman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/14 15:02:43 by phhofman          #+#    #+#             */
-/*   Updated: 2025/07/16 17:50:24 by phhofman         ###   ########.fr       */
+/*   Updated: 2025/07/17 10:14:43 by phhofman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -112,12 +112,12 @@ Fixed Fixed::operator*(const Fixed &other)
 
 Fixed Fixed::operator+(const Fixed &other)
 {
-	return (Fixed(this->toInt() + other.toInt()));
+	return (Fixed(this->toFloat() + other.toFloat()));
 }
 
 Fixed Fixed::operator-(const Fixed &other)
 {
-	return (Fixed(this->toInt() - other.toInt()));
+	return (Fixed(this->toFloat() - other.toFloat()));
 }
 
 Fixed Fixed::operator/(const Fixed &other)
@@ -133,7 +133,6 @@ Fixed &Fixed::operator++()
 
 Fixed Fixed::operator++(int)
 {
-
 	Fixed temp = *this;
 	this->rawBits += 1;
 	return temp;
